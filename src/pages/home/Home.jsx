@@ -1,7 +1,9 @@
 import React from "react";
-import { HeroSm, HeroMd, HeroLg } from "../../assets";
+import { HeroSm, HeroMd, HeroLg, PortfolioPattern } from "../../assets";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import Scroller from "../../components/Scroller";
+import { portfolioData } from "../../data";
 
 const Home = () => {
   return (
@@ -64,6 +66,60 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Scroller
+        text={
+          " 😃 Let's get to work! ✨ Have a project in mind ? 😃 Let's get to work! ✨ Have a project in mind ?"
+        }
+        link="/contact"
+      />
+
+      <section
+        id="work"
+        className="px-4 pb-12 border-black border-t-2 bg-teal-600 bg-fixed"
+        style={{ backgroundImage: "url(" + PortfolioPattern + ")" }}
+      >
+        <div className="container mx-auto">
+          <div className="text-white text-center py-12">
+            <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold mb-4">
+              Seleted Work
+            </h1>
+            <p className="max-w-xl mx-auto text-lg">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
+              repellat minima aliquam distinctio est culpa nemo adipisci.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 mb-28">
+            {portfolioData &&
+              portfolioData.map((item, index) => (
+                <Link
+                  to={item.link}
+                  key={index}
+                  className="md:even:pt-12 ease-in-out duration-75 hover:translate-y-[-4px] hover:drop-shadow-[10px_8px_0_rgba(0,0,0,1)]"
+                >
+                  <div className="border-2 border-black rounded-xl overflow-hidden bg-black">
+                    <img src={item.thumnail} alt={item.alt} loading="lazy" />
+                  </div>
+                  <div className="bg-white border-x-2 border-black border-b-2 rounded-bl-xl rounded-br-xl mx-4 p-4 text-lg flex justify-between gap-4 items-center">
+                    <div>
+                      <span className="font-bold"> {item.title} </span>
+                      <span className="text-zinc-400">
+                        &#9679; {item.category}
+                      </span>
+                    </div>
+                    <i class="bx bx-right-arrow-alt"></i>
+                  </div>
+                </Link>
+              ))}
+          </div>
+          <Link
+            to={"/work"}
+            className="flex text-xl gap-4 font-bold text-white justify-center mb-8 "
+          >
+            View All Work <i class="bx bx-right-arrow-alt"></i>
+          </Link>
+        </div>
+      </section>
+      <section className="py-48"></section>
     </div>
   );
 };
