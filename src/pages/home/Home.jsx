@@ -10,6 +10,7 @@ import {
   PortfolioPattern,
   Services,
 } from "../../assets";
+import Contact from "../../components/Contact";
 
 const Home = () => {
   return (
@@ -188,6 +189,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <Contact />
     </div>
   );
 };
