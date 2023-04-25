@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <section className="px-4 bg-yellow-300 hover:bg-black hover:text-white cursor-pointer border-black ease-in-out duration-150">
+    <section className="px-4 bg-yellow-300 hover:bg-black hover:text-white cursor-pointer border-t-2 border-black ease-in-out duration-150">
       <Link to="contact">
         <div className="container mx-auto md:flex gap-8 py-24">
           <div className="flex-col items-center">
