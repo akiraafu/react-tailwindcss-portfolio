@@ -1,9 +1,15 @@
 import React from "react";
-import { HeroSm, HeroMd, HeroLg, PortfolioPattern } from "../../assets";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import Scroller from "../../components/Scroller";
 import { portfolioData } from "../../data";
+import {
+  HeroSm,
+  HeroMd,
+  HeroLg,
+  PortfolioPattern,
+  Services,
+} from "../../assets";
 
 const Home = () => {
   return (
@@ -119,7 +125,69 @@ const Home = () => {
           </Link>
         </div>
       </section>
-      <section className="py-48"></section>
+      <section className="border-black border-t-2 px-4 py-12">
+        <div className="container mx-auto">
+          <div className=" text-center py-12">
+            <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold mb-4">
+              Services
+            </h1>
+            <p className="max-w-xl mx-auto text-lg">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
+              repellat minima aliquam distinctio est culpa nemo adipisci.
+            </p>
+          </div>
+          <div className="text-black py-12 grid lg:grid-cols-4 items-center">
+            <div>
+              <h3 className="text-3xl font-bold mb-4">Web Design</h3>
+              <p className="mb-4 text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                vitae voluptas et optio?
+              </p>
+              <Link to="#" className="flex gap-2 items-center font-bold mb-14">
+                Read more <i class="bx bx-right-arrow-alt"></i>
+              </Link>
+
+              <h3 className="text-3xl font-bold mb-4">Web Development</h3>
+              <p className="mb-4 text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                vitae voluptas et optio?
+              </p>
+              <Link to="#" className="flex gap-2 items-center font-bold mb-14">
+                Read more <i class="bx bx-right-arrow-alt"></i>
+              </Link>
+            </div>
+            <div className="flex justify-center mb-12 md:mb-0 col-span-2">
+              <img
+                src={Services}
+                alt="Services"
+                width="611"
+                height="764"
+                loading="lazy"
+                className="border-2 border-black rounded-full w-3/5 drop-shadow-[10px_-10px_0_rgba(250,204,21,1)]"
+              />
+            </div>
+            <div>
+              <h3 className="text-3xl font-bold mb-4">Branding</h3>
+              <p className="mb-4 text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                vitae voluptas et optio?
+              </p>
+              <Link to="#" className="flex gap-2 items-center font-bold mb-14">
+                Read more <i class="bx bx-right-arrow-alt"></i>
+              </Link>
+
+              <h3 className="text-3xl font-bold mb-4">WordPress</h3>
+              <p className="mb-4 text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                vitae voluptas et optio?
+              </p>
+              <Link to="#" className="flex gap-2 items-center font-bold mb-14">
+                Read more <i class="bx bx-right-arrow-alt"></i>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
