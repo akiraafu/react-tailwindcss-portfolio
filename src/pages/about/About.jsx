@@ -10,7 +10,7 @@ const About = () => {
         <div className="container mx-auto px-4 grid gap-8 lg:grid-cols-2">
           <div>
             <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold mb-4">
-              my story
+              My story
             </h1>
             <p className="mb-2 text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,

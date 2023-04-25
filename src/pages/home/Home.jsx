@@ -67,7 +67,21 @@ const Home = () => {
                 to="/contact"
                 className="px-6 py-4 rounded-md text-black flex items-center gap-2 "
               >
-                Let's Talk <i class="bx bx-right-arrow-alt"></i>
+                Let's Talk{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
               </Link>
             </div>
           </div>
@@ -113,7 +127,20 @@ const Home = () => {
                         &#9679; {item.category}
                       </span>
                     </div>
-                    <i class="bx bx-right-arrow-alt"></i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
                   </div>
                 </Link>
               ))}
@@ -122,7 +149,21 @@ const Home = () => {
             to={"/work"}
             className="flex text-xl gap-4 font-bold text-white justify-center mb-8 "
           >
-            View All Work <i class="bx bx-right-arrow-alt"></i>
+            View All Work{" "}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
           </Link>
         </div>
       </section>
@@ -145,7 +186,21 @@ const Home = () => {
                 vitae voluptas et optio?
               </p>
               <Link to="#" className="flex gap-2 items-center font-bold mb-14">
-                Read more <i class="bx bx-right-arrow-alt"></i>
+                Read more{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
               </Link>
 
               <h3 className="text-3xl font-bold mb-4">Web Development</h3>
@@ -154,7 +209,21 @@ const Home = () => {
                 vitae voluptas et optio?
               </p>
               <Link to="#" className="flex gap-2 items-center font-bold mb-14">
-                Read more <i class="bx bx-right-arrow-alt"></i>
+                Read more{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
               </Link>
             </div>
             <div className="flex justify-center mb-12 md:mb-0 col-span-2">
@@ -174,7 +243,21 @@ const Home = () => {
                 vitae voluptas et optio?
               </p>
               <Link to="#" className="flex gap-2 items-center font-bold mb-14">
-                Read more <i class="bx bx-right-arrow-alt"></i>
+                Read more{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
               </Link>
 
               <h3 className="text-3xl font-bold mb-4">WordPress</h3>
@@ -183,7 +266,21 @@ const Home = () => {
                 vitae voluptas et optio?
               </p>
               <Link to="#" className="flex gap-2 items-center font-bold mb-14">
-                Read more <i class="bx bx-right-arrow-alt"></i>
+                Read more{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
               </Link>
             </div>
           </div>
