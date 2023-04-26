@@ -15,7 +15,7 @@ const Footer = () => {
       </Link>
       <Link
         to="/contact"
-        className="md:col-start-3 border-black md:border-l-2 flex gap-2 items-center justify-center text-lg bg-yellow-300 hover:bg-yellow-500 ease-in-out duration-75"
+        className="md:col-start-3 border-black md:border-l-2 flex gap-2 items-center justify-center text-lg bg-fuchsia-300 hover:bg-fuchsia-500 ease-in-out duration-75"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

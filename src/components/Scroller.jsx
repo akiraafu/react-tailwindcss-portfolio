@@ -8,7 +8,7 @@ const Scroller = ({ text, link }) => {
         <Marquee
           pauseOnHover
           gradient={false}
-          className="bg-yellow-300 border-t-2 border-black py-2 font-bold text-4xl"
+          className="bg-fuchsia-300 border-t-2 border-black py-2 font-bold text-4xl"
         >
           {text}
         </Marquee>

@@ -14,6 +14,7 @@ import Github from "./icons/github.svg";
 import Discourd from "./icons/discourd.svg";
 import HarleyCover from "./harley-davidson.jpg";
 import HarleyWebsite from "./harley-website.jpg";
+import RadiantGradient from "./radiant-gradient.svg";
 
 export {
   Logo,
@@ -32,4 +33,5 @@ export {
   Discourd,
   HarleyCover,
   HarleyWebsite,
+  RadiantGradient,
 };

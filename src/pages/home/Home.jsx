@@ -7,7 +7,7 @@ import {
   HeroSm,
   HeroMd,
   HeroLg,
-  PortfolioPattern,
+  RadiantGradient,
   Services,
 } from "../../assets";
 import Contact from "../../components/Contact";
@@ -18,7 +18,7 @@ const Home = () => {
       <section className="py-10 lg:py-36 xl:py-48">
         <div className="container mx-auto gap-8 px-4 flex flex-col md:flex-row items-center">
           <div className="md:flex-1 md:order-2">
-            <picture className="flex drop-shadow-[10px_-10px_0_rgba(250,204,21,1)] border-black rounded-xl rounded-tl-[150px] rounded-br-[150px] overflow-hidden">
+            <picture className="flex drop-shadow-[10px_-10px_0_rgba(240,171,252,1)] border-black rounded-xl rounded-tl-[150px] rounded-br-[150px] overflow-hidden">
               <source
                 srcSet={HeroSm}
                 width="363"
@@ -57,17 +57,14 @@ const Home = () => {
             </p>
 
             <div className="flex items-baseline gap-4">
-              <HashLink
-                to="#work"
-                className="px-6 py-4 rounded-md bg-teal-600 hover:bg-teal-700 text-white"
-              >
-                Selected Work
+              <HashLink to="#work" className=" text-white">
+                <button className="button">Download CV</button>
               </HashLink>
-              <Link
+              {/* <Link
                 to="/contact"
                 className="px-6 py-4 rounded-md text-black flex items-center gap-2 "
               >
-                Let's Talk{" "}
+                Download CV
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"
@@ -82,7 +79,7 @@ const Home = () => {
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
                   />
                 </svg>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
@@ -97,10 +94,10 @@ const Home = () => {
       <section
         id="work"
         className="px-4 pb-12 border-black border-t-2 bg-teal-600 bg-fixed"
-        style={{ backgroundImage: "url(" + PortfolioPattern + ")" }}
+        style={{ backgroundImage: "url(" + RadiantGradient + ")" }}
       >
         <div className="container mx-auto">
-          <div className="text-white text-center py-12">
+          <div className=" text-center py-12">
             <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold mb-4">
               Seleted Work
             </h1>
@@ -147,9 +144,9 @@ const Home = () => {
           </div>
           <Link
             to={"/work"}
-            className="flex text-xl gap-4 font-bold text-white justify-center mb-8 "
+            className="flex text-xl gap-4 font-bold justify-center mb-8 "
           >
-            View All Work{" "}
+            View All Work
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -233,7 +230,7 @@ const Home = () => {
                 width="611"
                 height="764"
                 loading="lazy"
-                className="border-2 border-black rounded-full w-3/5 drop-shadow-[10px_-10px_0_rgba(250,204,21,1)]"
+                className="border-2 border-black rounded-full w-3/5 drop-shadow-[10px_-10px_0_rgba(240,171,252,1)]"
               />
             </div>
             <div>
