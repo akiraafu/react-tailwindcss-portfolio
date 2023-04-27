@@ -3,14 +3,15 @@ import { socials } from "../../data";
 import { HeroMd } from "../../assets";
 import Scroller from "../../components/Scroller";
 import Contact from "../../components/Contact";
+import ContactForm from "./ContactForm";
 
 const ContactPage = () => {
   return (
     <>
       <section className="py-12 border-x-2 border-black">
-        <div className="container mx-auto px-4 grid gap-8 lg:grid-cols-2">
-          <div>
-            <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold mb-4">
+        <div className="container w-full mx-auto px-4 flex flex-col">
+          <div className="md:w-1/2">
+            <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold mb-4 ">
               Contact
             </h1>
             <p className="mb-6 text-lg">
@@ -19,90 +20,31 @@ const ContactPage = () => {
               want to interact, the quickest way to get my attention is to hit
               me up on email.
             </p>
-            <p className="mb-6 text-xl">Want my email: hello@email.com</p>
-
-            <div className="text-lg font-bold">Find me on:</div>
-
-            <div className="mb-8">
-              <ul className="flex gap-6">
-                {socials.map((item, index) => (
-                  <li key={index}>
-                    <a
-                      target="_blank"
-                      href={item.link}
-                      rel="noopener noreferrer"
-                      className="py-2 flex flex-col md:flex-row gap-2 items-center justify-center"
-                    >
-                      <img src={item.icon} alt={item.alt} width="" height="" />
-                      {item.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
-
-          <div>
-            <form
-              action="https://public.herotofu.com/v1/dcf8f500-1b20-11ed-910c-a9b3a640214e"
-              method="post"
-            >
-              <div className="w-full mb-4">
-                <label
-                  for="name"
-                  className="form-label inline-block mb-2 text-gray-700"
-                >
-                  Your Name
-                </label>
-                <input
-                  name="Name"
-                  id="name"
-                  type="text"
-                  required
-                  className="block w-full px-3 py-2 border-black border-2 rounded"
-                />
+          <div className="w-full flex flex-col justify-start items-start md:flex-row gap-10">
+            <div className="w-full md:w-1/2 allContacts flex flex-col justify-center items-start px-10 max-w-md">
+              <div class="w-full flex flex-col justify-center items-center mb-10 gap-5 p-5 border-2 border-black">
+                <i class="bx bx-envelope text-3xl"></i>
+                <h4>Email</h4>
+                <h5 className="font-bold">junrongfu6@gmail.com</h5>
+                <a href="mailto:junrongfu6@gmail.com" target="_blank">
+                  Send an Email
+                </a>
               </div>
 
-              <div className="w-full mb-4">
-                <label
-                  for="email"
-                  className="form-label inline-block mb-2 text-gray-700"
-                >
-                  Your Email
-                </label>
-                <input
-                  name="Email"
-                  id="email"
-                  type="email"
-                  required
-                  className="block w-full px-3 py-2 border-black border-2 rounded"
-                />
+              <div class="w-full flex flex-col justify-center items-center m-b-10 gap-5 p-5 border-2 border-black">
+                <i class="bx bxl-facebook-square text-3xl"></i>
+                <h4>Messenger</h4>
+                <h5 className="font-bold">Junrong Fu (Akira)</h5>
+                <a href="https://m.me/junrong.fu" target="_blank">
+                  Send a Message
+                </a>
               </div>
+            </div>
 
-              <div className="w-full mb-4">
-                <label
-                  for="message"
-                  className="form-label inline-block mb-2 text-gray-700"
-                >
-                  Message
-                </label>
-                <textarea
-                  name="email"
-                  id="email"
-                  cols="30"
-                  rows="10"
-                  className="block w-full px-3 py-2 border-black border-2 rounded"
-                ></textarea>
-              </div>
-
-              <div>
-                <input
-                  type="submit"
-                  value="Send it!"
-                  className="px-6 py-4 rounded-md bg-teal-600 hover:bg-teal-700 text-white"
-                />
-              </div>
-            </form>
+            <div className="w-full md:w-1/2">
+              <ContactForm />
+            </div>
           </div>
         </div>
       </section>

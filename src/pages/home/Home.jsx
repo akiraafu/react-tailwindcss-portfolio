@@ -55,6 +55,14 @@ const Home = () => {
               laboriosam iste voluptas soluta odio, atque, ipsa nam eos
               cupiditate vero alias suscipit exercitationem!
             </p>
+            <div className="text-lg font-bold">
+              <p>Find me on:</p>
+              <div className="mb-8 text-4xl flex gap-5">
+                <i class="bx bxl-linkedin-square"></i>
+                <i class="bx bxl-github"></i>
+                <i class="bx bxl-instagram-alt"></i>
+              </div>
+            </div>
 
             <div className="flex items-baseline gap-4">
               <HashLink to="#work" className=" text-white">
