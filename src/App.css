@@ -9,12 +9,12 @@
 .button {
   width: 200px;
   height: 50px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: "Chakra Petch", sans-serif;
   border: none;
   text-transform: uppercase;
   text-decoration: none;
-  background: linear-gradient(45deg, transparent 5%, #cc3df0 5%);
+  background: linear-gradient(45deg, transparent 5%, #f0abfc 5%);
   letter-spacing: 3px;
   line-height: 40px;
   box-shadow: 6px 0px 0px #00e6f6;
@@ -25,11 +25,11 @@
 .button::after {
   width: 200px;
   height: 50px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border: none;
   text-transform: uppercase;
   text-decoration: none;
-  background: linear-gradient(45deg, transparent 5%, #cc3df0 5%);
+  background: linear-gradient(45deg, transparent 5%, #f0abfc 5%);
   letter-spacing: 3px;
   line-height: 40px;
   box-shadow: 6px 0px 0px #00e6f6;
@@ -56,7 +56,7 @@
     transparent 3%,
     #00e6f6 3%,
     #00e6f6 5%,
-    #cc3df0 5%
+    #f0abfc 5%
   );
   text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
   clip-path: var(--slice-0);
@@ -141,7 +141,34 @@
 }
 
 #myform .btn-contact {
-  background: linear-gradient(45deg, transparent 5%, #cc3df0 5%);
+  background: linear-gradient(45deg, transparent 5%, #f0abfc 5%);
   font-size: 0.9rem;
   margin-top: 0.5rem;
+}
+
+.left-side,
+.right-side {
+  height: calc(100vh - 124px);
+}
+
+#scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+#scrollbar::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #e7e7e7;
+  border: 1px solid #cacaca;
+}
+
+#scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: rgba(22, 22, 22, 0.15);
+}
+
+@media screen and (max-width: 800px) {
+  .left-side,
+  .right-side {
+    height: auto;
+  }
 }

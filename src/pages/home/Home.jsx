@@ -15,7 +15,7 @@ import Contact from "../../components/Contact";
 const Home = () => {
   return (
     <div className="border-black border-x-2">
-      <section className="py-10 lg:py-36 xl:py-48">
+      <section className="py-10 lg:py-36">
         <div className="container mx-auto gap-8 px-4 flex flex-col md:flex-row items-center">
           <div className="md:flex-1 md:order-2">
             <picture className="flex drop-shadow-[10px_-10px_0_rgba(240,171,252,1)] border-black rounded-xl rounded-tl-[150px] rounded-br-[150px] overflow-hidden">
@@ -65,7 +65,7 @@ const Home = () => {
             </div>
 
             <div className="flex items-baseline gap-4">
-              <HashLink to="#work" className=" text-white">
+              <HashLink to="#work" className="font-bold">
                 <button className="button">Download CV</button>
               </HashLink>
               {/* <Link
