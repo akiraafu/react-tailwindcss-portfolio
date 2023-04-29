@@ -7,9 +7,9 @@ const ContactPage = () => {
       <section className="border-x-2 border-black">
         <div className="w-full border-r-2 mx-auto flex flex-col md:flex-row">
           <div className="left-side md:w-1/2 md:border-x-2 border-black ">
-            <div className="p-10">
+            <div className="p-20">
               <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold mb-4 ">
-                Contact
+                Contact Me
               </h1>
               <p className="mb-6 text-lg ">
                 Ever want to contact me? If you're looking for help with your

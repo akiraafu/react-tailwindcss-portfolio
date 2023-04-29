@@ -47,7 +47,7 @@ const ContactForm = () => {
         placeholder="Your Message"
         rows="7"
         required
-        className="border-black  border-y-2"
+        className="border-black  border-y-2 mb-5"
       ></textarea>
       <button type="submit" class="button btn-contact font-bold mx-auto">
         Leave Message
