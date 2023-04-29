@@ -7,7 +7,9 @@ const Contact = () => {
       <Link to="/contact">
         <div className="container mx-auto md:flex gap-8 py-24">
           <div className="flex-col items-center">
-            <h2 className="text-4xl">Have a project in mind?</h2>
+            <h2 className="text-4xl">
+              Ready to build something great together?
+            </h2>
             <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold">
               Let's get to work.
             </h1>

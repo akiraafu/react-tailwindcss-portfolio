@@ -14,7 +14,7 @@ import Contact from "../../components/Contact";
 const Home = () => {
   return (
     <div className="border-black border-x-2">
-      <section className="h-fit">
+      <section>
         <div className="w-full h-full mx-auto flex flex-col md:flex-row items-center">
           <div className="w-full right-side md:w-1/2 border-black border-x-2 md:order-2 flex flex-col">
             <div className="image w-full h-1/2 bg-purple-100">
@@ -24,13 +24,13 @@ const Home = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="w-full h-1/2 sm:invisible md:visible flex md:flex-row border-black border-t-2">
-              <div className="w-1/2 text-lg font-bold bg-yellow-100 border-black border-r-2">
+            <div className="w-full h-1/2 sm:hidden md:flex md:flex-row border-black border-t-2">
+              <div className="w-1/2 text-lg font-bold bg-yellow-200 border-black border-r-2">
                 <div className="h-full flex justify-center items-center">
                   <img src={Burst} className="w-1/2" />
                 </div>
               </div>
-              <div className="w-1/2 bg-blue-100 flex justify-center items-center ">
+              <div className="w-1/2 bg-blue-200 flex justify-center items-center ">
                 <img src={HandwriteArrow} className="w-1/2 h-1/2" />
               </div>
             </div>
@@ -153,57 +153,24 @@ const Home = () => {
               Services
             </h1>
             <p className="max-w-xl mx-auto text-lg">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
-              repellat minima aliquam distinctio est culpa nemo adipisci.
+              I provide a range of services to help your brand bring the online
+              presence to the next level.
             </p>
           </div>
           <div className="text-black py-12 grid lg:grid-cols-4 items-center">
             <div>
               <h3 className="text-3xl font-bold mb-4">Web Design</h3>
-              <p className="mb-4 text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-                vitae voluptas et optio?
+              <p className="text-lg mb-14">
+                My approach to web design is to create user-friendly and
+                aesthetically pleasing interfaces. Let me help you design a
+                website that stands out from the crowd.
               </p>
-              <Link to="#" className="flex gap-2 items-center font-bold mb-14">
-                Read more{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </Link>
 
               <h3 className="text-3xl font-bold mb-4">Web Development</h3>
-              <p className="mb-4 text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-                vitae voluptas et optio?
+              <p className="mb-14 text-lg">
+                With my technical skills, I develop fast, responsive and easy to
+                use websites. Let me turn your ideas into reality
               </p>
-              <Link to="#" className="flex gap-2 items-center font-bold mb-14">
-                Read more{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </Link>
             </div>
             <div className="flex justify-center mb-12 md:mb-0 col-span-2">
               <img
@@ -217,50 +184,16 @@ const Home = () => {
             </div>
             <div>
               <h3 className="text-3xl font-bold mb-4">Branding</h3>
-              <p className="mb-4 text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-                vitae voluptas et optio?
+              <p className="mb-14 text-lg">
+                With my marketing background, I can help you develop a strong
+                brand identity that sets you apart from your competitors.
               </p>
-              <Link to="#" className="flex gap-2 items-center font-bold mb-14">
-                Read more{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </Link>
 
               <h3 className="text-3xl font-bold mb-4">WordPress</h3>
-              <p className="mb-4 text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-                vitae voluptas et optio?
+              <p className="mb-14 text-lg">
+                If you're looking to build a custom WordPress site, I've got the
+                experience to get the job done efficiently and effectively.
               </p>
-              <Link to="#" className="flex gap-2 items-center font-bold mb-14">
-                Read more{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </Link>
             </div>
           </div>
         </div>

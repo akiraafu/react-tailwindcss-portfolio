@@ -31,7 +31,7 @@ const ContactForm = () => {
         name="user_name"
         placeholder="Your Name"
         required
-        className="border-black  border-y-2"
+        className="border-black  border-y-2 bg-purple-200"
       />
 
       <input
@@ -39,7 +39,7 @@ const ContactForm = () => {
         name="user_email"
         placeholder="Your Email"
         required
-        className="border-black border-y-2"
+        className="border-black border-y-2 bg-purple-200"
       />
 
       <textarea
@@ -47,7 +47,7 @@ const ContactForm = () => {
         placeholder="Your Message"
         rows="7"
         required
-        className="border-black  border-y-2 mb-5"
+        className="border-black  border-y-2 mb-5 bg-purple-200"
       ></textarea>
       <button type="submit" class="button btn-contact font-bold mx-auto">
         Leave Message
