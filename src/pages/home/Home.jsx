@@ -3,40 +3,39 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import Scroller from "../../components/Scroller";
 import { portfolioData } from "../../data";
-import {
-  HeroSm,
-  HeroMd,
-  HeroLg,
-  RadiantGradient,
-  Services,
-} from "../../assets";
+import { RadiantGradient, Services } from "../../assets";
+import backgroundImage from "../../assets/background.jpg";
+import HandwriteArrow from "../../assets/handwrite-arrow.svg";
+import Dots from "../../assets/Group.svg";
+import Burst from "../../assets/Burst-pucker-2.svg";
+
 import Contact from "../../components/Contact";
 
 const Home = () => {
   return (
     <div className="border-black border-x-2">
-      <section className="py-10 lg:py-36">
-        <div className="container mx-auto gap-8 px-4 flex flex-col md:flex-row items-center">
-          <div className="md:flex-1 md:order-2">
-            <picture className="flex drop-shadow-[10px_-10px_0_rgba(240,171,252,1)] border-black rounded-xl rounded-tl-[150px] rounded-br-[150px] overflow-hidden">
-              <source
-                srcSet={HeroSm}
-                width="363"
-                height="222"
-                media="(max-width:400px)"
-                type="image/jpg"
+      <section className="h-fit">
+        <div className="w-full h-full mx-auto flex flex-col md:flex-row items-center">
+          <div className="w-full right-side md:w-1/2 border-black border-x-2 md:order-2 flex flex-col">
+            <div className="image w-full h-1/2 bg-purple-100">
+              <img
+                src={backgroundImage}
+                alt=""
+                className="w-full h-full object-cover"
               />
-              <source
-                srcSet={HeroMd}
-                width="608"
-                height="372"
-                media="(max-width:400px)"
-                type="image/jpg"
-              />
-              <img src={HeroLg} alt="" width="870" height="532" />
-            </picture>
+            </div>
+            <div className="w-full h-1/2 sm:invisible md:visible flex md:flex-row border-black border-t-2">
+              <div className="w-1/2 text-lg font-bold bg-yellow-100 border-black border-r-2">
+                <div className="h-full flex justify-center items-center">
+                  <img src={Burst} className="w-1/2" />
+                </div>
+              </div>
+              <div className="w-1/2 bg-blue-100 flex justify-center items-center ">
+                <img src={HandwriteArrow} className="w-1/2 h-1/2" />
+              </div>
+            </div>
           </div>
-          <div className="md:flex-1">
+          <div className="w-full md:w-1/2 h-full p-20 ">
             <h2 className="text-lg md:text-xl font-bold uppercase">
               Hi 👋 I'm Akira
             </h2>
@@ -45,15 +44,11 @@ const Home = () => {
             "
             >
               Web Developer <span className="text-yellow-400">.</span>
-              <p>
-                Passionator<span className="text-violet-900">.</span>
-              </p>
             </h1>
             <p className="text-lg max-w-xl mb-6">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
-              quisquam facere asperiores expedita enim aspernatur ratione
-              laboriosam iste voluptas soluta odio, atque, ipsa nam eos
-              cupiditate vero alias suscipit exercitationem!
+              As a passionate and driven IT student, I am fascinated by the
+              endless possibilities of web development. I am committed to keep
+              learning and developing.
             </p>
             <div className="text-lg font-bold">
               <p>Find me on:</p>
@@ -63,31 +58,10 @@ const Home = () => {
                 <i class="bx bxl-instagram-alt"></i>
               </div>
             </div>
-
             <div className="flex items-baseline gap-4">
               <HashLink to="#work" className="font-bold">
                 <button className="button">Download CV</button>
               </HashLink>
-              {/* <Link
-                to="/contact"
-                className="px-6 py-4 rounded-md text-black flex items-center gap-2 "
-              >
-                Download CV
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </Link> */}
             </div>
           </div>
         </div>

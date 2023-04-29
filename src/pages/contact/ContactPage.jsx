@@ -12,10 +12,10 @@ const ContactPage = () => {
                 Contact Me
               </h1>
               <p className="mb-6 text-lg ">
-                Ever want to contact me? If you're looking for help with your
-                creative business, have a burning question to ask me, or simply
-                want to interact, the quickest way to get my attention is to hit
-                me up on email.
+                If you'd like to get in touch with me, I can be reached via
+                email, messenger, or by leaving a comment on my website. For the
+                quickest response, please feel free to reach out to me via
+                email.
               </p>
               <div className="text-lg font-bold">
                 <p>Find me on:</p>

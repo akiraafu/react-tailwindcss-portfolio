@@ -83,6 +83,15 @@ const About = () => {
 
                   <i class="devicon-mongodb-plain-wordmark colored"></i>
 
+                  <i class="devicon-firebase-plain-wordmark colored"></i>
+
+                  <i class="devicon-mysql-plain-wordmark colored"></i>
+
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                    className="w-14 h-14"
+                  />
+
                   <i class="devicon-yarn-plain-wordmark colored"></i>
 
                   <i class="devicon-heroku-plain-wordmark colored"></i>
