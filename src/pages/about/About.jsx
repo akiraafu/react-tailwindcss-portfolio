@@ -1,5 +1,6 @@
 import Scroller from "../../components/Scroller";
 import Contact from "../../components/Contact";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
       <section className="border-x-2 border-black">
         <div className="w-full border-r-2 mx-auto flex flex-col md:flex-row">
           <div className="md:w-1/2 md:border-x-2 border-black ">
-            <div className="p-20">
+            <div className="p-10 md:p-20">
               <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold mb-4">
                 About Me
               </h1>
@@ -29,9 +30,16 @@ const About = () => {
               <div className="text-lg font-bold">
                 <p>Find me on:</p>
                 <div className="mb-8 text-4xl flex gap-5">
-                  <i class="bx bxl-linkedin-square"></i>
-                  <i class="bx bxl-github"></i>
-                  <i class="bx bxl-instagram-alt"></i>
+                  <Link to="https://www.linkedin.com/in/jrfu/" target="_blank">
+                    <i class="bx bxl-linkedin-square"></i>
+                  </Link>
+                  <Link to="https://github.com/akiraafu" target="_blank">
+                    <i class="bx bxl-github"></i>
+                  </Link>
+
+                  {/* <Link to="#" target="_blank">
+                    <i class="bx bxl-instagram-alt"></i>
+                  </Link> */}
                 </div>
               </div>
             </div>
@@ -52,10 +60,10 @@ const About = () => {
 
                   <i class="devicon-php-plain colored"></i>
 
-                  <img
+                  {/* <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
                     className="w-14 h-14"
-                  />
+                  /> */}
                 </div>
               </div>
               <div className="w-full  text-2xl  border-black p-5 ">

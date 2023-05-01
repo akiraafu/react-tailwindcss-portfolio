@@ -6,7 +6,6 @@ import { portfolioData } from "../../data";
 import { RadiantGradient, Services } from "../../assets";
 import backgroundImage from "../../assets/background.jpg";
 import HandwriteArrow from "../../assets/handwrite-arrow.svg";
-import Dots from "../../assets/Group.svg";
 import Burst from "../../assets/Burst-pucker-2.svg";
 
 import Contact from "../../components/Contact";
@@ -24,7 +23,7 @@ const Home = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="w-full h-1/2 sm:hidden md:flex md:flex-row border-black border-t-2">
+            <div className="w-full h-1/2 hidden md:flex md:flex-row border-black border-t-2">
               <div className="w-1/2 text-lg font-bold bg-yellow-200 border-black border-r-2">
                 <div className="h-full flex justify-center items-center">
                   <img src={Burst} className="w-1/2" />
@@ -46,22 +45,29 @@ const Home = () => {
               Web Developer <span className="text-yellow-400">.</span>
             </h1>
             <p className="text-lg max-w-xl mb-6">
-              As a passionate and driven IT student, I am fascinated by the
-              endless possibilities of web development. I am committed to keep
+              As a passionate and driven IT graduate, I am fascinated by the
+              endless possibilities of web development and am committed to keep
               learning and developing.
             </p>
             <div className="text-lg font-bold">
               <p>Find me on:</p>
               <div className="mb-8 text-4xl flex gap-5">
-                <i class="bx bxl-linkedin-square"></i>
-                <i class="bx bxl-github"></i>
-                <i class="bx bxl-instagram-alt"></i>
+                <Link to="https://www.linkedin.com/in/jrfu/" target="_blank">
+                  <i class="bx bxl-linkedin-square"></i>
+                </Link>
+                <Link to="https://github.com/akiraafu" target="_blank">
+                  <i class="bx bxl-github"></i>
+                </Link>
+
+                {/* <Link to="#" target="_blank">
+                    <i class="bx bxl-instagram-alt"></i>
+                  </Link> */}
               </div>
             </div>
             <div className="flex items-baseline gap-4">
-              <HashLink to="#work" className="font-bold">
+              <a href="#" download className="font-bold">
                 <button className="button">Download CV</button>
-              </HashLink>
+              </a>
             </div>
           </div>
         </div>
