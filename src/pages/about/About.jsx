@@ -20,12 +20,12 @@ const About = () => {
                 innovation.
               </p>
               <p className="mb-4 text-lg">
-                Being an IT student with a technical background and a commitment
-                to continuous improvement, I am confident in my ability to
-                contribute to your development team. If you are seeking a highly
-                motivated and driven individual whether as an intern or junior
-                developer, I would be honored to have the opportunity to work
-                with you.
+                Being an IT graduate with a technical background and a
+                commitment to continuous improvement, I am confident in my
+                ability to contribute to your development team. If you are
+                seeking a highly motivated and driven individual whether as an
+                intern or junior developer, I would be honored to have the
+                opportunity to work with you.
               </p>
               <div className="text-lg font-bold">
                 <p>Find me on:</p>

@@ -34,7 +34,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 h-full p-20 ">
+          <div className="w-full md:w-1/2 h-full p-10 md:p-20 ">
             <h2 className="text-lg md:text-xl font-bold uppercase">
               Hi 👋 I'm Akira
             </h2>
