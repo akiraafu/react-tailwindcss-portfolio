@@ -43,13 +43,13 @@ const ContactPage = () => {
               <div class=" bg-green-200 md:w-1/2 w-full flex flex-col justify-center items-center mb-10 gap-5 p-5 border-y-2 md:border-t-0 border-black">
                 <i class="bx bx-envelope text-3xl"></i>
                 <h4>Email</h4>
-                <h5 className="font-bold">akirafu0720@gmail.com</h5>
-                <a href="mailto:akirafu0720@gmail.com" target="_blank">
+                <h5 className="font-bold">junrongfu6@gmail.com</h5>
+                <a href="mailto:junrongfu6@gmail.com" target="_blank">
                   Send an Email
                 </a>
               </div>
 
-              <div class=" bg-blue-200 md:w-1/2 w-full flex flex-col justify-center items-center m-b-10 gap-5 p-5 md:border-l-2 border-b-2 border-black">
+              <div class=" bg-blue-200 md:w-1/2 w-full flex flex-col justify-center items-center m-b-10 gap-5 p-5 border-t-2 md:border-l-2 md:border-t-0 border-b-2 border-black">
                 <i class="bx bxl-facebook-square text-3xl"></i>
                 <h4>Messenger</h4>
                 <h5 className="font-bold ">Akira(Junrong)</h5>

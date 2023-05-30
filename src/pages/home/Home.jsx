@@ -1,16 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import Scroller from "../../components/Scroller";
 import { portfolioData } from "../../data";
 import { RadiantGradient, Services } from "../../assets";
 import backgroundImage from "../../assets/background.jpg";
 import HandwriteArrow from "../../assets/handwrite-arrow.svg";
 import Burst from "../../assets/Burst-pucker-2.svg";
-
 import Contact from "../../components/Contact";
 
 const Home = () => {
+
   return (
     <div className="border-black border-x-2">
       <section>
@@ -44,24 +43,20 @@ const Home = () => {
             >
               Web Developer <span className="text-yellow-400">.</span>
             </h1>
-            <p className="text-lg max-w-xl mb-6">
-              As a passionate and driven IT graduate, I am fascinated by the
-              endless possibilities of web development and am committed to keep
-              learning and developing.
+            <p className="text-lg max-w-xl mb-6 text-justify">
+            As a passionate and driven IT graduate with a background in marketing, I am fascinated by the endless possibilities of web development and how it can boost business. Committed to continuous learning and development, aim to deliver outstanding results.
             </p>
             <div className="text-lg font-bold">
               <p>Find me on:</p>
               <div className="mb-8 text-4xl flex gap-5">
                 <Link to="https://www.linkedin.com/in/jrfu/" target="_blank">
-                  <i class="bx bxl-linkedin-square"></i>
+                  <i className="bx bxl-linkedin-square"></i>
                 </Link>
                 <Link to="https://github.com/akiraafu" target="_blank">
-                  <i class="bx bxl-github"></i>
+                  <i className="bx bxl-github"></i>
                 </Link>
 
-                {/* <Link to="#" target="_blank">
-                    <i class="bx bxl-instagram-alt"></i>
-                  </Link> */}
+          
               </div>
             </div>
             <div className="flex items-baseline gap-4">
