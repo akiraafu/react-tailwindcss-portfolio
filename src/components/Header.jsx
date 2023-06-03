@@ -5,24 +5,29 @@ const activeClassName =
   "relative before:content-['*'] before:-top-4 before:left-1/2 before:-ml-1 before:absolute before:text-amber-400";
 
 const Header = () => {
-  // let mybutton = document.getElementById("backToTop");
-  //   window.onscroll = function() {scrollFunction()};
-  //   function scrollFunction() {
-  //     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-  //       mybutton.style.display = "block";
-  //     } else {
-  //       mybutton.style.display = "none";
-  //     }
-  //   }
-    
-  // const handleClick = ()=>{
-  //     document.body.scrollTop = 0;
-  //     document.documentElement.scrollTop = 0;
+  let mybutton;
 
-  // }
+  window.onscroll = function () {
+    mybutton = document.getElementById("backToTop");
+    scrollFunction(mybutton);
+  };
+
+    function scrollFunction(mybutton) {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+  const handleClick = ()=>{
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+
+  }
   return (
     <header className="grid grid-cols-2 md:grid-cols-[180px_1fr_180px] border-black border-2 bg-white">
-       {/* <button onClick={handleClick} id="backToTop" title="Go to top"><i className='bx bxs-to-top'></i></button> */}
+       <button onClick={handleClick} id="backToTop" title="Go to top"><i className='bx bxs-to-top'></i></button>
       <Link
         to="/"
         className="flex justify-center py-4 logoLink border-black border-r-2"

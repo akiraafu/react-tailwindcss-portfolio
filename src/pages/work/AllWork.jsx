@@ -1,13 +1,16 @@
 import { Link } from "react-router-dom";
 import { portfolioData } from "../../data";
 import { RadiantGradient } from "../../assets";
+import Contact from "../../components/Contact";
+import Scroller from "../../components/Scroller";
 
 
 const AllWork = () => {
   return (
+    <> 
     <section
     id="work"
-    className="px-4 pb-12 border-black border-t-2 bg-teal-600 bg-fixed"
+    className="px-4 pb-12  bg-teal-600 bg-fixed"
     style={{ backgroundImage: "url(" + RadiantGradient + ")" }}
   >
     <div className="container mx-auto">
@@ -16,8 +19,7 @@ const AllWork = () => {
           All Works
         </h1>
         <p className="max-w-xl mx-auto text-lg">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
-          repellat minima aliquam distinctio est culpa nemo adipisci.
+        Explore my comprehensive portfolio of web projects, ranging from dynamic websites to interactive web applications.
         </p>
       </div>
       <div className="grid md:grid-cols-2 gap-8 mb-28">
@@ -36,7 +38,7 @@ const AllWork = () => {
                   <span className="font-bold"> {item.title} </span>
                   <span className="text-zinc-400">
                     {item.category.map((c,index)=>(
-                    <span key={index} > &#9679; {c}&#160;</span>
+                    <span key={index} > &#9679; {c} &#160;</span>
                        ))}
                   </span>
                 </div>
@@ -60,6 +62,14 @@ const AllWork = () => {
       </div>
       </div>
       </section>
+      <Scroller
+        text={
+          " 😃 Let's get to work! ✨ Have a project in mind ? 😃 Let's get to work! ✨ Have a project in mind ?  😃 Let's get to work! ✨ Have a project in mind ? 😃 Let's get to work! ✨ Have a project in mind ?"
+        }
+        link="/contact"
+      />
+      <Contact />
+      </>
   )
 }
 

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Scroller from "../../components/Scroller";
 import { portfolioData } from "../../data";
 import { RadiantGradient, Services } from "../../assets";
+import MyCV from '../../assets/akira-cv-062023.pdf';
 import backgroundImage from "../../assets/background.jpg";
 import HandwriteArrow from "../../assets/handwrite-arrow.svg";
 import Burst from "../../assets/Burst-pucker-2.svg";
@@ -34,14 +35,15 @@ const Home = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 h-full p-10 md:p-20 ">
-            <h2 className="text-lg md:text-xl font-bold uppercase">
-              Hi 👋 I'm Akira
+            <h2 className="text-lg md:text-xl font-bold">
+              Hi, 👋 
             </h2>
             <h1
               className="text-4xl lg:text-5xl xl:text-7xl font-bold mb-4
             "
             >
-              Web Developer <span className="text-yellow-400">.</span>
+               I'm Akira<span className="text-yellow-400">.</span><br/>
+               Web Developer<span className='text-violet-900'>.</span>
             </h1>
             <p className="text-lg max-w-xl mb-6 text-justify">
             As a passionate and driven IT graduate with a background in marketing, I am fascinated by the endless possibilities of web development and how it can boost business. Committed to continuous learning and development, aim to deliver outstanding results.
@@ -60,7 +62,7 @@ const Home = () => {
               </div>
             </div>
             <div className="flex items-baseline gap-4">
-              <a href="#" download className="font-bold">
+              <a href={MyCV} download className="font-bold">
                 <button className="button">Download CV</button>
               </a>
             </div>
@@ -85,13 +87,12 @@ const Home = () => {
               Seleted Work
             </h1>
             <p className="max-w-xl mx-auto text-lg">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
-              repellat minima aliquam distinctio est culpa nemo adipisci.
+            Explore my comprehensive portfolio of web projects, ranging from dynamic websites to interactive web applications.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8 mb-28">
             {portfolioData &&
-              portfolioData.map((item, index) => (
+              portfolioData.slice(0, 4).map((item, index) => (
                 <Link
                   to={item.link}
                   key={index}
@@ -104,7 +105,9 @@ const Home = () => {
                     <div>
                       <span className="font-bold"> {item.title} </span>
                       <span className="text-zinc-400">
-                        &#9679; {item.category}
+                      {item.category.map((c,index)=>(
+                      <span key={index} > &#9679; {c} &#160;</span>
+                       ))}
                       </span>
                     </div>
                     <svg
