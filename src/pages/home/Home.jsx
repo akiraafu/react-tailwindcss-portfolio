@@ -12,10 +12,10 @@ import Contact from "../../components/Contact";
 const Home = () => {
 
   return (
-    <div className="border-black border-x-2">
-      <section>
+    <div >
+      <section className="h-full">
         <div className="w-full h-full mx-auto flex flex-col md:flex-row items-center">
-          <div className="w-full right-side md:w-1/2 border-black border-x-2 md:order-2 flex flex-col">
+          <div className="w-full md:h-[calc(100vh-100px)] bg-pink-200 flex flex-col right-side md:w-1/2 border-black border-x-2 md:order-2">
             <div className="image w-full h-1/2 bg-purple-100">
               <img
                 src={backgroundImage}
@@ -78,7 +78,7 @@ const Home = () => {
 
       <section
         id="work"
-        className="px-4 pb-12 border-black border-t-2 bg-teal-600 bg-fixed"
+        className="px-4 pb-12 border-black border-t-2 bg-pink-100 bg-fixed"
         style={{ backgroundImage: "url(" + RadiantGradient + ")" }}
       >
         <div className="container mx-auto">

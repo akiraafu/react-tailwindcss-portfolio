@@ -22,14 +22,14 @@ const ContactPage = () => {
                 <p>Find me on:</p>
                 <div className="mb-8 text-4xl flex gap-5">
                   <Link to="https://www.linkedin.com/in/jrfu/" target="_blank">
-                    <i class="bx bxl-linkedin-square"></i>
+                    <i className="bx bxl-linkedin-square"></i>
                   </Link>
                   <Link to="https://github.com/akiraafu" target="_blank">
-                    <i class="bx bxl-github"></i>
+                    <i className="bx bxl-github"></i>
                   </Link>
 
                   {/* <Link to="#" target="_blank">
-                    <i class="bx bxl-instagram-alt"></i>
+                    <i className="bx bxl-instagram-alt"></i>
                   </Link> */}
                 </div>
               </div>
@@ -40,8 +40,8 @@ const ContactPage = () => {
             id="scrollbar"
           >
             <div className="w-full  allContacts flex flex-col md:flex-row justify-center items-start">
-              <div class=" bg-green-200 md:w-1/2 w-full flex flex-col justify-center items-center mb-10 gap-5 p-5 border-y-2 md:border-t-0 border-black">
-                <i class="bx bx-envelope text-3xl"></i>
+              <div className=" bg-green-200 md:w-1/2 w-full flex flex-col justify-center items-center mb-10 gap-5 p-5 border-y-2 md:border-t-0 border-black">
+                <i className="bx bx-envelope text-3xl"></i>
                 <h4>Email</h4>
                 <h5 className="font-bold">junrongfu6@gmail.com</h5>
                 <a href="mailto:junrongfu6@gmail.com" target="_blank">
@@ -49,8 +49,8 @@ const ContactPage = () => {
                 </a>
               </div>
 
-              <div class=" bg-blue-200 md:w-1/2 w-full flex flex-col justify-center items-center m-b-10 gap-5 p-5 border-t-2 md:border-l-2 md:border-t-0 border-b-2 border-black">
-                <i class="bx bxl-facebook-square text-3xl"></i>
+              <div className=" bg-blue-200 md:w-1/2 w-full flex flex-col justify-center items-center m-b-10 gap-5 p-5 border-t-2 md:border-l-2 md:border-t-0 border-b-2 border-black">
+                <i className="bx bxl-facebook-square text-3xl"></i>
                 <h4>Messenger</h4>
                 <h5 className="font-bold ">Akira(Junrong)</h5>
                 <a href="https://m.me/junrong.fu" target="_blank">

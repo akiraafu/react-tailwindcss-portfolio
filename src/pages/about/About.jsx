@@ -31,14 +31,14 @@ const About = () => {
                 <p>Find me on:</p>
                 <div className="mb-8 text-4xl flex gap-5">
                   <Link to="https://www.linkedin.com/in/jrfu/" target="_blank">
-                    <i class="bx bxl-linkedin-square"></i>
+                    <i className="bx bxl-linkedin-square"></i>
                   </Link>
                   <Link to="https://github.com/akiraafu" target="_blank">
-                    <i class="bx bxl-github"></i>
+                    <i className="bx bxl-github"></i>
                   </Link>
 
                   {/* <Link to="#" target="_blank">
-                    <i class="bx bxl-instagram-alt"></i>
+                    <i className="bx bxl-instagram-alt"></i>
                   </Link> */}
                 </div>
               </div>
@@ -52,13 +52,13 @@ const About = () => {
               <div className="w-full text-2xl  border-black p-5 ">
                 <p className="">Programming Languages</p>
                 <div className="w-full text-6xl flex flex-wrap gap-5 mt-3">
-                  <i class="devicon-html5-plain-wordmark colored"></i>
+                  <i className="devicon-html5-plain-wordmark colored"></i>
 
-                  <i class="devicon-css3-plain-wordmark colored"></i>
+                  <i className="devicon-css3-plain-wordmark colored"></i>
 
-                  <i class="devicon-javascript-plain colored"></i>
+                  <i className="devicon-javascript-plain colored"></i>
 
-                  <i class="devicon-php-plain colored"></i>
+                  <i className="devicon-php-plain colored"></i>
 
                   {/* <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
@@ -69,40 +69,40 @@ const About = () => {
               <div className="w-full  text-2xl  border-black p-5 ">
                 <p>Framework & Libraries</p>
                 <div className="w-full text-6xl flex flex-wrap gap-5 mt-3">
-                  <i class="devicon-bootstrap-plain colored"></i>
+                  <i className="devicon-bootstrap-plain colored"></i>
 
-                  <i class="devicon-tailwindcss-original-wordmark colored"></i>
+                  <i className="devicon-tailwindcss-original-wordmark colored"></i>
 
-                  <i class="devicon-sass-original colored"></i>
+                  <i className="devicon-sass-original colored"></i>
 
-                  <i class="devicon-react-original-wordmark colored"></i>
+                  <i className="devicon-react-original-wordmark colored"></i>
 
-                  <i class="devicon-wordpress-plain colored"></i>
+                  <i className="devicon-wordpress-plain colored"></i>
                 </div>
               </div>
               <div className="w-full h-1/3 text-2xl p-5">
                 <p>Tools</p>
                 <div className="w-full text-6xl flex flex-wrap gap-5 mt-3">
-                  <i class="devicon-nodejs-plain-wordmark colored"></i>
+                  <i className="devicon-nodejs-plain-wordmark colored"></i>
 
-                  <i class="devicon-npm-original-wordmark colored"></i>
+                  <i className="devicon-npm-original-wordmark colored"></i>
 
-                  <i class="devicon-git-plain-wordmark colored"></i>
+                  <i className="devicon-git-plain-wordmark colored"></i>
 
-                  <i class="devicon-mongodb-plain-wordmark colored"></i>
+                  <i className="devicon-mongodb-plain-wordmark colored"></i>
 
-                  <i class="devicon-firebase-plain-wordmark colored"></i>
+                  <i className="devicon-firebase-plain-wordmark colored"></i>
 
-                  <i class="devicon-mysql-plain-wordmark colored"></i>
+                  <i className="devicon-mysql-plain-wordmark colored"></i>
 
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
                     className="w-14 h-14"
                   />
 
-                  <i class="devicon-yarn-plain-wordmark colored"></i>
+                  <i className="devicon-yarn-plain-wordmark colored"></i>
 
-                  <i class="devicon-heroku-plain-wordmark colored"></i>
+                  <i className="devicon-heroku-plain-wordmark colored"></i>
                 </div>
               </div>
             </div>
