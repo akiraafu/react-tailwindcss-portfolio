@@ -50,7 +50,7 @@ const ContactForm = () => {
         required
         className="border-black  border-y-2 mb-5 bg-purple-200"
       ></textarea>
-      <button type="submit" className="button btn-contact font-bold mx-auto">
+      <button type="submit" className="button btn-contact font-bold mx-auto ">
         Leave Message
       </button>
     </form>

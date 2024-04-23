@@ -21,12 +21,12 @@ const ContactPage = () => {
               <div className="text-lg font-bold">
                 <p>Find me on:</p>
                 <div className="mb-8 text-4xl flex gap-5">
-                  <Link to="https://www.linkedin.com/in/jrfu/" target="_blank">
-                    <i className="bx bxl-linkedin-square"></i>
-                  </Link>
-                  <Link to="https://github.com/akiraafu" target="_blank">
-                    <i className="bx bxl-github"></i>
-                  </Link>
+                <Link to="https://www.linkedin.com/in/jrfu/" className="hover:text-pink-400" target="_blank">
+                  <i className="bx bxl-linkedin-square"></i>
+                </Link>
+                <Link to="https://github.com/akiraafu" className="hover:text-pink-400" target="_blank">
+                  <i className="bx bxl-github"></i>
+                </Link>
 
                   {/* <Link to="#" target="_blank">
                     <i className="bx bxl-instagram-alt"></i>
@@ -36,15 +36,15 @@ const ContactPage = () => {
             </div>
           </div>
           <div
-            className="scrollbar md:w-1/2 right-side md:overflow-y-scroll flex flex-col justify-start items-start gap-10"
+            className="scrollbar md:w-1/2 right-side md:overflow-y-scroll flex flex-col justify-start items-start"
             id="scrollbar"
           >
-            <div className="w-full  allContacts flex flex-col md:flex-row justify-center items-start">
-              <div className=" bg-green-200 md:w-1/2 w-full flex flex-col justify-center items-center mb-10 gap-5 p-5 border-y-2 md:border-t-0 border-black">
+            <div className="w-full h-full allContacts flex flex-col md:flex-row justify-center items-start mb-10">
+              <div className=" bg-green-200 md:w-1/2 w-full flex flex-col justify-center items-center mb-8 gap-5 p-5 border-y-2 md:border-t-0 border-black">
                 <i className="bx bx-envelope text-3xl"></i>
                 <h4>Email</h4>
                 <h5 className="font-bold">junrongfu6@gmail.com</h5>
-                <a href="mailto:junrongfu6@gmail.com" target="_blank">
+                <a href="mailto:junrongfu6@gmail.com" className="hover:text-pink-700" target="_blank">
                   Send an Email
                 </a>
               </div>
@@ -53,13 +53,13 @@ const ContactPage = () => {
                 <i className="bx bxl-facebook-square text-3xl"></i>
                 <h4>Messenger</h4>
                 <h5 className="font-bold ">Akira(Junrong)</h5>
-                <a href="https://m.me/junrong.fu" target="_blank">
+                <a href="https://m.me/junrong.fu" className="hover:text-pink-700"  target="_blank">
                   Send a Message
                 </a>
               </div>
             </div>
 
-            <div className="w-full mb-20">
+            <div className="w-full mb-10">
               <ContactForm />
             </div>
           </div>
